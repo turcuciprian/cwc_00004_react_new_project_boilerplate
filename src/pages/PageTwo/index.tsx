@@ -21,7 +21,7 @@ export function PageTwo() {
       </header>
 
       <div className="App-line"></div>
-      
+
       <main className="App-main">
         <p>
           Page 2
