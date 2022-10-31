@@ -1,4 +1,5 @@
 import { Link, Outlet } from 'react-router-dom'
+import { pathLocations } from '../../routes/path';
 import './style.css'
 
 export default function Layout() {
@@ -7,13 +8,22 @@ export default function Layout() {
             <nav>
                 <ul>
                     <li>
-                        <Link to="/">Home</Link>
+                        <Link to={pathLocations.layout}>Home</Link>
                     </li>
                     <li>
-                        <Link to="/courses">Courses</Link>
+                        <Link to={pathLocations.courses}>Courses</Link>
                     </li>
                     <li>
-                        <Link to="/nothing-here">Nothing Here</Link>
+                        <Link to={pathLocations.NoMatch}>Nothing Here</Link>
+                    </li>
+                    <li>
+                        <Link to={pathLocations.publicPage}>Public page</Link>
+                    </li>
+                    <li>
+                        <Link to={pathLocations.protected}>Protected page</Link>
+                    </li>
+                    <li>
+                        <Link to={pathLocations.loginPage}>Login</Link>
                     </li>
                 </ul>
             </nav>
