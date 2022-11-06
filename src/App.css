@@ -1,5 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  a {
+    @apply text-blue-400;
+  }
+
+  a:hover {
+    @apply text-blue-800 underline;
+  }
+h1,h2,h3,h4,h5{
+  @apply py-5;
+}
+  h1 {
+    @apply text-5xl;
+  }
+
+  h2 {
+    @apply text-4xl;
+  }
+
+  h3 {
+    @apply text-3xl;
+  }
+
+  h4 {
+    @apply text-2xl;
+
+  }
+
+  h5 {
+    @apply text-xl;
+  }
+
+  button {
+    @apply outline outline-1 rounded px-2;
+  }
+
+}
+
 .App {
-  text-align: center;
+  @apply text-left
+  pl-4;
 }
 
 .App-logo {
@@ -32,6 +75,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }

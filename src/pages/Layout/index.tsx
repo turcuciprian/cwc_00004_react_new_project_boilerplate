@@ -6,7 +6,7 @@ export default function Layout() {
     return (
         <div>
             <nav>
-                <ul>
+                <ul className='menu'>
                     <li>
                         <Link to={pathLocations.layout}>Home</Link>
                     </li>
