@@ -7,7 +7,7 @@ function App() {
   const element = useRoutes(routes)
   return (
     <AuthProvider>
-      <div className="App">
+      <div className="App bg-500-red">
         {element}
       </div>
     </AuthProvider>
