@@ -20,6 +20,9 @@ export default function Layout() {
                         <Link to={pathLocations.publicPage}>Public page</Link>
                     </li>
                     <li>
+                        <Link to={pathLocations.counterPage}>Counter page</Link>
+                    </li>
+                    <li>
                         <Link to={pathLocations.protected}>Protected page</Link>
                     </li>
                     <li>
