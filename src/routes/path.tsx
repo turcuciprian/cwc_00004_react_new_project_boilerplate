@@ -1,4 +1,5 @@
 import { RouteObject } from "react-router-dom";
+import { CounterPage } from "../pages/Counter";
 import Course from "../pages/Course";
 import Courses from "../pages/Courses";
 import CoursesIndex from "../pages/CoursesIndex";
@@ -19,6 +20,7 @@ export enum pathLocations {
   advancedReactId = "/courses/advanced-react",
   reactRouter = "/courses/react-router",
   publicPage = '/public-page',
+  counterPage = '/counter-page',
   loginPage = '/login-page',
   protected = '/protected'
 }
@@ -38,6 +40,7 @@ export const routes: RouteObject[] = [
         ],
       },
       { path: pathLocations.publicPage, element: <PublicPage /> },
+      { path: pathLocations.counterPage, element: <CounterPage /> },
       { path: pathLocations.loginPage, element: <LoginPage /> },
       { path: pathLocations.NoMatch, element: <NoMatch /> },
       { path: pathLocations.protected, element: <RequireAuth><ProtectedPage /></RequireAuth> },
